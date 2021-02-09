@@ -205,7 +205,7 @@
                                 <input type="text" class="form-control" name="tanggal_terima"
                                     value="<?php echo date("m/d/Y")?>" readonly>
                             </div>
-                        </form>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,8 @@
     <footer class="site-footer">
         <div class="text-center">
             <p>
-                &copy; Copyrights <strong>Kelompok 2</strong>
+                &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif Ramadhan
+                    18111228<br> Kharisma Firsty 18111078 </strong>
             </p>
             <div class="credits">
                 <!--

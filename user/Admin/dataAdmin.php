@@ -33,8 +33,12 @@
                                 <td class="hidden-phone"><?php echo $data['nama_admin']?></td>
                                 <td class="hidden-phone"><?php echo $data['status_admin']?></td>
                                 <td>
-                                    <a href="beranda.php?hal=ubahAdmin&id_login=<?php echo $data['id_login']?>" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
-                                    <a href= "beranda.php?hal=hapusAdmin&id_login=<?php echo $data['id_login']?>" class="btn btn-danger btn-xs" onclick="return confirm ('Yakin akan di hapus??')"><i class="fa fa-trash-o "></i></a>
+                                    <a href="beranda.php?hal=ubahAdmin&id_login=<?php echo $data['id_login']?>"
+                                        class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></a>
+                                    <a href="beranda.php?hal=hapusAdmin&id_login=<?php echo $data['id_login']?>"
+                                        class="btn btn-danger btn-xs"
+                                        onclick="return confirm ('Yakin akan di hapus??')"><i
+                                            class="fa fa-trash-o "></i></a>
                                 </td>
                             </tr>
                             <?php
@@ -55,22 +59,23 @@
         </div>
     </section>
     <footer class="site-footer">
-      <div class="text-center">
-        <p>
-          &copy; Copyrights <strong>Kelompok 2</strong>
-        </p>
-        <div class="credits">
-          <!--
+        <div class="text-center">
+            <p>
+                &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif Ramadhan
+                    18111228<br> Kharisma Firsty 18111078 </strong>
+            </p>
+            <div class="credits">
+                <!--
             You are NOT allowed to delete the credit link to TemplateMag with free version.
             You can delete the credit link only if you bought the pro version.
             Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
             Licensing information: https://templatemag.com/license/
           -->
-         
+
+            </div>
+            <a href="index.html#" class="go-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
         </div>
-        <a href="index.html#" class="go-top">
-          <i class="fa fa-angle-up"></i>
-          </a>
-      </div>
     </footer>
 </section>

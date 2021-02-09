@@ -100,7 +100,8 @@
                      <!-- /col-md-4 -->
                      <div class="col-md-4 centered">
                          <div class="profile-pic">
-                             <p><img src="../admin/Admin/picture/<?php echo $_SESSION['picture']?>" class="img-circle"></p>
+                             <p><img src="../admin/Admin/picture/<?php echo $_SESSION['picture']?>" class="img-circle">
+                             </p>
                              <p>
                                  <button class="btn btn-theme"><i class="fa fa-check"></i> Follow</button>
                                  <button class="btn btn-theme02">Add</button>
@@ -116,7 +117,8 @@
      <footer class="site-footer">
          <div class="text-center">
              <p>
-                 &copy; Copyrights <strong>Kelompok 2</strong>
+                 &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif
+                     Ramadhan 18111228<br> Kharisma Firsty 18111078 </strong>
              </p>
              <div class="credits">
                  <!--

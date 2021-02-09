@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Feb 2021 pada 12.37
+-- Waktu pembuatan: 08 Feb 2021 pada 16.33
 -- Versi server: 10.4.16-MariaDB
 -- Versi PHP: 7.4.12
 
@@ -126,6 +126,48 @@ INSERT INTO `tb_departement` (`kode_departement`, `nama_departement`, `no_teleph
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `tb_detail_penerimaan`
+--
+
+CREATE TABLE `tb_detail_penerimaan` (
+  `id` int(20) NOT NULL,
+  `kode_terima` varchar(20) NOT NULL,
+  `kode_barang` varchar(20) NOT NULL,
+  `jumlah_barang` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tb_detail_penerimaan`
+--
+
+INSERT INTO `tb_detail_penerimaan` (`id`, `kode_terima`, `kode_barang`, `jumlah_barang`) VALUES
+(43, 'T2102020001', 'BRG001', 10),
+(44, 'T2102020001', 'BRG004', 10);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_detail_pengeluaran`
+--
+
+CREATE TABLE `tb_detail_pengeluaran` (
+  `id` int(10) NOT NULL,
+  `kode_keluar` varchar(20) NOT NULL,
+  `kode_barang` varchar(20) NOT NULL,
+  `jumlah_barang` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tb_detail_pengeluaran`
+--
+
+INSERT INTO `tb_detail_pengeluaran` (`id`, `kode_keluar`, `kode_barang`, `jumlah_barang`) VALUES
+(7, 'R2102020001', 'BRG001', 10),
+(8, 'R2102020001', 'BRG004', 10);
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `tb_kategori`
 --
 
@@ -178,6 +220,63 @@ INSERT INTO `tb_login` (`id_login`, `username`, `password`, `nama_admin`, `statu
 ('ADM004', 'anhar', '68aacc5d77146a2398ca64c5c3c596f6', 'Anhar Hadhitya', 'admin', 'anhar.jpg'),
 ('ADM005', 'shandy', '11ecb7ec5b5052063748800c9b8e5c46', 'shandy Alif Ramadhan', 'user', 'pp.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_penerimaan`
+--
+
+CREATE TABLE `tb_penerimaan` (
+  `kode_terima` varchar(20) NOT NULL,
+  `tanggal_terima` date NOT NULL,
+  `jumlah_item` int(20) NOT NULL,
+  `kode_departement` varchar(20) NOT NULL,
+  `id_login` varchar(20) NOT NULL,
+  `keterangan` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tb_penerimaan`
+--
+
+INSERT INTO `tb_penerimaan` (`kode_terima`, `tanggal_terima`, `jumlah_item`, `kode_departement`, `id_login`, `keterangan`) VALUES
+('T2102020001', '2021-02-02', 2, 'DPT003', 'ADM004', 'Diterima');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_pengeluaran`
+--
+
+CREATE TABLE `tb_pengeluaran` (
+  `kode_keluar` varchar(12) NOT NULL,
+  `tanggal_keluar` date NOT NULL,
+  `jumlah_item` int(10) NOT NULL,
+  `kode_departement` varchar(20) NOT NULL,
+  `id_login` varchar(10) NOT NULL,
+  `keterangan` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tb_pengeluaran`
+--
+
+INSERT INTO `tb_pengeluaran` (`kode_keluar`, `tanggal_keluar`, `jumlah_item`, `kode_departement`, `id_login`, `keterangan`) VALUES
+('R2102020001', '2021-02-02', 2, 'DPT003', 'ADM004', 'Done');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_sementara`
+--
+
+CREATE TABLE `tb_sementara` (
+  `id` int(10) NOT NULL,
+  `kode` varchar(20) NOT NULL,
+  `kode_barang` varchar(20) NOT NULL,
+  `jumlah` int(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indexes for dumped tables
 --
@@ -195,6 +294,18 @@ ALTER TABLE `tb_departement`
   ADD PRIMARY KEY (`kode_departement`);
 
 --
+-- Indeks untuk tabel `tb_detail_penerimaan`
+--
+ALTER TABLE `tb_detail_penerimaan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `tb_detail_pengeluaran`
+--
+ALTER TABLE `tb_detail_pengeluaran`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `tb_kategori`
 --
 ALTER TABLE `tb_kategori`
@@ -205,6 +316,46 @@ ALTER TABLE `tb_kategori`
 --
 ALTER TABLE `tb_login`
   ADD PRIMARY KEY (`id_login`);
+
+--
+-- Indeks untuk tabel `tb_penerimaan`
+--
+ALTER TABLE `tb_penerimaan`
+  ADD PRIMARY KEY (`kode_terima`);
+
+--
+-- Indeks untuk tabel `tb_pengeluaran`
+--
+ALTER TABLE `tb_pengeluaran`
+  ADD PRIMARY KEY (`kode_keluar`);
+
+--
+-- Indeks untuk tabel `tb_sementara`
+--
+ALTER TABLE `tb_sementara`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
+--
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_detail_penerimaan`
+--
+ALTER TABLE `tb_detail_penerimaan`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_detail_pengeluaran`
+--
+ALTER TABLE `tb_detail_pengeluaran`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT untuk tabel `tb_sementara`
+--
+ALTER TABLE `tb_sementara`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

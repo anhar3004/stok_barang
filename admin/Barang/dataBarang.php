@@ -73,7 +73,7 @@
     <footer class="site-footer">
       <div class="text-center">
         <p>
-          &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi <br> Sandi Alif Ramadhan </strong>
+          &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif Ramadhan 18111228<br> Kharisma Firsty 18111078 </strong>
         </p>
         <div class="credits">
           <!--

@@ -60,9 +60,9 @@
     </section>
     <footer class="site-footer">
         <div class="text-center">
-            <p>
-                &copy; Copyrights <strong>Kelompok 2</strong>
-            </p>
+        <p>
+          &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif Ramadhan 18111228<br> Kharisma Firsty 18111078 </strong>
+        </p>
             <div class="credits">
                 <!--
             You are NOT allowed to delete the credit link to TemplateMag with free version.

@@ -37,10 +37,11 @@ echo $kodeKategori;
                 <div class="form-panel">
                     <h4 class="mb text-center"><i class="fa fa-tags"></i> Tambah Kategori</h4>
                     <form class="form-horizontal style-form " method="post">
-                    <div class="form-group ">
+                        <div class="form-group ">
                             <label class="col-sm-2 col-sm-2 control-label"> Kode</label>
                             <div class="col-sm-4">
-                                <input type="text" class="form-control" name="kode_kategori" value="<?php echo $kodeKategori ?>" readonly>
+                                <input type="text" class="form-control" name="kode_kategori"
+                                    value="<?php echo $kodeKategori ?>" readonly>
                             </div>
                         </div>
                         <div class="form-group ">
@@ -61,22 +62,23 @@ echo $kodeKategori;
         </div>
     </section>
     <footer class="site-footer">
-      <div class="text-center">
-        <p>
-          &copy; Copyrights <strong>Kelompok 2</strong>
-        </p>
-        <div class="credits">
-          <!--
+        <div class="text-center">
+            <p>
+                &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif Ramadhan
+                    18111228<br> Kharisma Firsty 18111078 </strong>
+            </p>
+            <div class="credits">
+                <!--
             You are NOT allowed to delete the credit link to TemplateMag with free version.
             You can delete the credit link only if you bought the pro version.
             Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/dashio-bootstrap-admin-template/
             Licensing information: https://templatemag.com/license/
           -->
-         
+
+            </div>
+            <a href="index.html#" class="go-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
         </div>
-        <a href="index.html#" class="go-top">
-          <i class="fa fa-angle-up"></i>
-          </a>
-      </div>
     </footer>
 </section>

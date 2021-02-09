@@ -85,8 +85,9 @@
                                     <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
                                         <img src="./Admin/picture/<?php echo $data['picture'] ?>" alt="" style="width: 200px; height: 150px;/>
                                     </div>
-                                    <div class="fileupload-preview fileupload-exists thumbnail"
-                                        style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                                    <div class=" fileupload-preview fileupload-exists thumbnail"
+                                            style="max-width: 200px; max-height: 150px; line-height: 20px;">
+                                    </div>
                                     <div>
                                         <span class="btn btn-theme02 btn-file">
                                             <span class="fileupload-new"><i class="fa fa-paperclip"></i> Select
@@ -115,7 +116,8 @@
     <footer class="site-footer">
         <div class="text-center">
             <p>
-                &copy; Copyrights <strong>Kelompok 2</strong>
+                &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif Ramadhan
+                    18111228<br> Kharisma Firsty 18111078 </strong>
             </p>
             <div class="credits">
                 <!--

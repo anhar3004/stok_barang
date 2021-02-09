@@ -1,4 +1,3 @@
-
 <section id="main-content">
     <section class="wrapper">
         <h3><i class="fa fa-book"></i> Laporan</h3>
@@ -6,11 +5,12 @@
             <div class="col-lg-12">
                 <div class="form-panel">
                     <h4 class="mb text-center"><i class="fa fa-tags"></i> Penerimaan Barang</h4>
-                    <form class="form-horizontal style-form " method="POST" target="_blank" action="../printLaporanPenerimaanBarang.php" enctype="multipart/form-data">
+                    <form class="form-horizontal style-form " method="POST" target="_blank"
+                        action="../printLaporanPenerimaanBarang.php" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="control-label col-sm-2">Rentang Tanggal</label>
                             <div class="col-sm-2">
-                                <div class="input-group input-large" >
+                                <div class="input-group input-large">
                                     <input type="date" class="form-control" name="tanggal_awal">
                                     <span class="input-group-addon">To</span>
                                     <input type="date" class="form-control" name="tanggal_akhir">
@@ -33,7 +33,8 @@
     <footer class="site-footer">
         <div class="text-center">
             <p>
-                &copy; Copyrights <strong>Kelompok 2</strong>
+                &copy; Copyrights<br> <strong>Anhar Hadhitya 18111184 <br>Dendi Renaldi 18111190<br> Sandi Alif Ramadhan
+                    18111228<br> Kharisma Firsty 18111078 </strong>
             </p>
             <div class="credits">
                 <!--
